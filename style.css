@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrap{
+
+    background: #2c8088;
+}
+
+
+
+.cart>a{
+    font-size: xx-large;
+    color:white;
+}
+
+
+.cart>a:hover{
+    font-size: xx-large;
+    color:blue;
+}
+
+
+
+
+#heading{
+    text-align: center;
+    color: white;
+    font-family: 'Lobster Two', cursive;
+    padding: 30px;
+    font-size: 90px;
+}
+
+#tag{
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: large;
+    position: relative;
+    top: -50px;
+}
+.cont{
+    margin: 20px 60px;
+}
+
+.img{
+    width: 300px;
+    height: 250px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.img:hover{
+    box-shadow: 0px 0px 25px whitesmoke;
+    transform: scale(1.5);
+}
+
+
+.cards{
+    background:rgba(255, 255, 255, 0.322);
+    backdrop-filter: blur(100%);
+    box-shadow: 0px 0px 5px white;
+    width: 100%;
+    border: 2px rgba(0, 0, 0, 0) solid;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+.cards1{
+    background:rgba(255, 255, 255, 0.795);
+    backdrop-filter: blur(100px);
+    width: 100%;
+    border: 2px rgba(0, 0, 0, 0) solid;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px 0px;
+}
+
+.details{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px 20px;
+    /* border: 1px solid black; */
+}
+
+.title{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Lobster Two', cursive;
+}
+
+.description{
+    width: 100% !important;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.price::before{
+    content: 'Price: $ ';
+}
+.price{
+    font-family: 'Lobster Two', cursive;
+    font-size: x-large;
+}
+
+.rating::before{
+    content: 'rating: ';
+}
+
+.rating{
+    font-family: 'Lobster Two', cursive;
+}
+
+.rating::after{
+    content: '/ 5';
+}
+
+button{
+    border: 0px;
+    background: #62bbc2;
+    width: 150px;
+    height: 40px;
+    color: white;
+}
+
+button:hover{
+    box-shadow: 0px 0px 5px #62bbc2;
+}
+
+
+@media (max-width:880px) {
+   .details{
+    line-height: 22px;
+   }
+   .title{
+    line-height: 25px;
+   }
+}
+
+@media (max-width:725px) {
+    .details{
+        line-height: 18px;
+    }
+}
+
+@media (max-width:639px) {
+    .details>p{
+        margin: 5px;
+    }
+    .description{
+        font-size: medium;
+    }
+    .title{
+        font-size: larger;
+    }
+}
+
+@media (max-width:597px) {
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .cards1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .img{
+        width: 250px;
+        height: 250px;
+    }
+    .cont{
+        margin: 20px 20px;
+    }
+}
+
+@media (max-width:337px) {
+    .img{
+        width: 200px;
+        height: 200px;
+    }
+}
+@media (max-width:311px) {
+    #heading{
+        font-size: 50px;
+    }
+}
+@media (max-width:267px) {
+    .img{
+        width: 150px;
+        height: 150px;
+    }
+
+}
